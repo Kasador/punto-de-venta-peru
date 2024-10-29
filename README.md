@@ -22,7 +22,7 @@ Tienda Punto de Venta es un sistema de punto de venta diseñado específicamente
    git clone https://github.com/tu-usuario/punto-de-venta-peru.git
    
 ## Portafolio
-(Enlace de Portafolio)[https://hunterstevenshaw.info/]
+[https://hunterstevenshaw.info/]
 1. Copia enlance para mi sitio de web:
     ```bash
     https://hunterstevenshaw.info/
