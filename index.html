@@ -16,24 +16,24 @@
 </head>
 <body>
     <!-- Vue App -->
-    <div id="app">{{ message }}</div>
+    <div id="app"></div>
 
     <!-- Vue Script with CDN -->
     <script type="module">
         import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.prod.js';
+        import { Main } from './scripts/main.js';  // Importing the Main class
 
-        // Vue App Initialization
+        // Initialize Vue App
         createApp({
-            data() {
-                return {
-                    message: 'Hola Vue!'
-                }
+            mounted() {
+                // Initialize Main class inside Vue when the component is mounted
+                const mainInstance = new Main();
+                mainInstance.greet();
             }
         }).mount('#app');
     </script>
 
     <!-- JavaScript Files -->
     <script src="scripts/utils.js" defer></script>
-    <script src="scripts/main.js" defer></script>
 </body>
 </html>

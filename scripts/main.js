@@ -1,19 +1,18 @@
-// Test clock
-// let counter = 0;
-// setInterval(() => {
-//     console.log(`Update every second: ${counter++}`);
-// }, 1000);
-
-class Main {
+// Main Class
+export class Main {
     constructor() {
-        this.counter = 0;
+        // Initialize variables here
+        // console.log('Main class initialized!');
     }
 
-    
+    // Example method
+    greet() {
+        console.log('Bienvenido a Tienda POS');
+    }
 }
 
+// Automatically instantiate the Main class when this file is loaded
 (() => {
-    // Connect JS
     console.log('JS connected!');
     const main = new Main();
 })();
