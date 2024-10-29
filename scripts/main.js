@@ -7,7 +7,7 @@ export class Main {
 
     // Example method
     greet() {
-        console.log('Bienvenido a Tienda POS');
+        console.log('Bienvenido a Tienda Punto de Venta');
     }
 }
 
