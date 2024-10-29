@@ -15,9 +15,22 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Vue App -->
+    <div id="app">{{ message }}</div>
 
-    <!-- Main Content -->
-    <!-- Consider adding semantic elements like <header>, <main>, <footer> if needed -->
+    <!-- Vue Script with CDN -->
+    <script type="module">
+        import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js';
+
+        // Vue App Initialization
+        createApp({
+            data() {
+                return {
+                    message: 'Hola Vue!'
+                }
+            }
+        }).mount('#app');
+    </script>
 
     <!-- JavaScript Files -->
     <script src="scripts/utils.js" defer></script>
